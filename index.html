@@ -256,36 +256,39 @@
        2. HERO SECTION
        ========================================================================== -->
   <section id="inicio"
-    class="relative min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden">
-    <!-- Background Image with Overlay -->
+    class="relative min-h-screen flex items-center justify-center pt-20 sm:pt-28 lg:pt-32 pb-16 sm:pb-24 overflow-hidden">
+    <!-- Background Image with Responsive Picture Tag -->
     <div class="absolute inset-0 z-0">
-      <img src="assets/hero-bg.jpg" alt="Dra. Paola Toledo - Toledo Advocacia Especializada" width="1920" height="1080" fetchpriority="high"
-        loading="eager" decoding="async" class="w-full h-full object-cover object-[78%_center] sm:object-[72%_center] lg:object-center select-none pointer-events-none">
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/hero-bg-mobile.jpg">
+        <img src="assets/hero-bg.jpg" alt="Dra. Paola Toledo - Toledo Advocacia Especializada" width="1920" height="1080" fetchpriority="high"
+          loading="eager" decoding="async" class="w-full h-full object-cover object-top sm:object-center lg:object-center select-none pointer-events-none">
+      </picture>
       <!-- Dark luxury gradient overlays matching #20251F -->
       <div class="absolute inset-0 bg-gradient-to-t from-[#20251F] via-[#20251F]/30 to-[#20251F]/60"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-[#20251F]/90 via-[#20251F]/60 to-transparent lg:hidden"></div>
+      <div class="absolute inset-x-0 bottom-0 top-[28%] bg-gradient-to-t from-[#20251F] via-[#20251F]/95 to-transparent lg:hidden"></div>
       <div
         class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none">
       </div>
     </div>
 
     <!-- Ambient Decorative Lines -->
-    <div class="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-7xl h-full pointer-events-none z-0">
+    <div class="hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-7xl h-full pointer-events-none z-0">
       <div class="absolute left-8 top-1/4 w-px h-64 bg-gradient-to-b from-transparent via-gold/20 to-transparent"></div>
       <div class="absolute right-8 bottom-1/4 w-px h-64 bg-gradient-to-b from-transparent via-gold/20 to-transparent">
       </div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-[35vh] sm:pt-[28vh] lg:pt-0">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
         <!-- Left Content (Column 7) -->
         <div class="lg:col-span-7 text-center lg:text-left">
 
           <!-- Badges -->
-          <div class="mb-5 sm:mb-6 pt-1 sm:pt-0 reveal flex justify-center lg:justify-start">
+          <div class="mb-4 sm:mb-5 pt-1 sm:pt-0 reveal flex justify-center lg:justify-start">
             <span
-              class="inline-block text-[11px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold font-semibold leading-relaxed px-3.5 py-1.5 sm:px-0 sm:py-0 rounded-full bg-gold/10 sm:bg-transparent border border-gold/25 sm:border-transparent text-center">
+              class="inline-block text-[10px] sm:text-[11px] uppercase tracking-widest text-gold font-medium leading-relaxed px-3 py-1 sm:px-0 sm:py-0 rounded-full bg-gold/10 sm:bg-transparent border border-gold/20 sm:border-transparent text-center">
               Advocacia Especializada • Direito Criminal & Cível
             </span>
           </div>
@@ -316,16 +319,27 @@
 
           <!-- Support Highlights (OAB & Localização) -->
           <div
-            class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-5 text-xs text-slate-300/90 reveal reveal-delay-3 pt-1">
+            class="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 sm:gap-x-5 gap-y-2 text-xs text-slate-300 reveal reveal-delay-3 pt-2">
+            
             <div class="flex items-center gap-2">
-              <i class="fa-solid fa-scale-balanced text-gold text-sm"></i>
-              <span><strong>OAB/SP:</strong> 506.634</span>
+              <i class="fa-solid fa-scale-balanced text-gold text-sm flex-shrink-0"></i>
+              <span><strong class="text-white font-medium">OAB/SP:</strong> 506.634</span>
             </div>
+
             <span class="hidden sm:inline text-gold/40">•</span>
+
             <div class="flex items-center gap-2">
-              <i class="fa-solid fa-location-dot text-gold text-sm"></i>
-              <span>São Bernardo do Campo/SP • Atendimento Nacional</span>
+              <i class="fa-solid fa-location-dot text-gold text-sm flex-shrink-0"></i>
+              <span>São Bernardo do Campo/SP</span>
             </div>
+
+            <span class="hidden sm:inline text-gold/40">•</span>
+
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-globe text-gold text-sm flex-shrink-0"></i>
+              <span>Atuação Nacional</span>
+            </div>
+
           </div>
 
         </div>
