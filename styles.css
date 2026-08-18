@@ -3,8 +3,6 @@
    Luxury Custom Stylesheet & Design Tokens (Dual-Tone Dark & Light)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Gantari:wght@400;600;700&display=swap');
-
 :root {
   /* Dark color palette from old page (#20251F) & luxury surfaces */
   --bg-dark: #20251F;
@@ -32,8 +30,7 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Plus Jakarta Sans', 'Gantari', sans-serif;
-  --font-cursive: 'Great Vibes', cursive;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -48,7 +45,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -56,7 +53,7 @@ body {
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -120,11 +117,11 @@ body {
   width: 220px;
   height: 52px;
   background: linear-gradient(135deg, #8C602F 0%, #D2AD66 35%, #F4DA85 65%, #D2AD66 85%, #8C602F 100%);
-  -webkit-mask-image: url('assets/logo.png');
+  -webkit-mask-image: url('assets/logo.webp');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left center;
   -webkit-mask-size: contain;
-  mask-image: url('assets/logo.png');
+  mask-image: url('assets/logo.webp');
   mask-repeat: no-repeat;
   mask-position: left center;
   mask-size: contain;
@@ -141,11 +138,11 @@ body {
   width: 240px;
   height: 60px;
   background: linear-gradient(135deg, #8C602F 0%, #D2AD66 35%, #F4DA85 65%, #D2AD66 85%, #8C602F 100%);
-  -webkit-mask-image: url('assets/logo.png');
+  -webkit-mask-image: url('assets/logo.webp');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left center;
   -webkit-mask-size: contain;
-  mask-image: url('assets/logo.png');
+  mask-image: url('assets/logo.webp');
   mask-repeat: no-repeat;
   mask-position: left center;
   mask-size: contain;

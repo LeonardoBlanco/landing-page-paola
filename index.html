@@ -4,27 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Paola N. Toledo | Toledo Advocacia Especializada</title>
+  <title>Dra. Paola N. Toledo | Toledo Advocacia Especializada - São Bernardo do Campo &amp; Atuação Nacional</title>
 
   <!-- SEO & Meta Tags -->
   <meta name="description"
-    content="Advogada criminalista e cível especialista em São Bernardo do Campo. Atendimento humano, estratégico e focado em resultados. Toledo Advocacia Especializada. Atuação em todo o Brasil.">
+    content="Advocacia Criminal e Cível de excelência em São Bernardo do Campo/SP e atuação em todo o Brasil. Defesa estratégica, Habeas Corpus, Tribunal do Júri e Direito de Família. Plantão 24h.">
   <meta name="keywords"
-    content="advogada criminalista, advogada civel, sao bernardo do campo, habeas corpus, tribunal do juri, direito de familia, toledo advocacia, dra paola toledo">
+    content="advogada criminalista, advogada civel, sao bernardo do campo, habeas corpus, tribunal do juri, direito de familia, toledo advocacia, dra paola toledo, advogado criminal sp, defesa criminal 24h">
   <meta name="author" content="Dra. Paola N. Toledo">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://drapaolatoledo.com.br/">
 
   <!-- Open Graph / Redes Sociais -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://drapaolatoledo.com.br/">
-  <meta property="og:title" content="Dra. Paola N. Toledo | Advocacia Especializada">
-  <meta property="og:description"
-    content="Atendimento jurídico humano, técnico e altamente estratégico. São Bernardo do Campo/SP — Atuação em todo o Brasil.">
-  <meta property="og:image" content="assets/dra-paola.png">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Toledo Advocacia Especializada">
+  <meta property="og:url" content="https://drapaolatoledo.com.br/">
+  <meta property="og:title" content="Dra. Paola N. Toledo | Toledo Advocacia Especializada">
+  <meta property="og:description"
+    content="Advocacia Criminal e Cível de excelência. Atendimento humanizado e estratégico em São Bernardo do Campo/SP e em todo o Brasil. Plantão 24h.">
+  <meta property="og:image" content="https://drapaolatoledo.com.br/og-image.webp">
+  <meta property="og:image:secure_url" content="https://drapaolatoledo.com.br/og-image.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Toledo Advocacia Especializada - Dra. Paola Toledo">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dra. Paola N. Toledo | Toledo Advocacia Especializada">
+  <meta name="twitter:description"
+    content="Advocacia Criminal e Cível de excelência em São Bernardo do Campo/SP e atuação em todo o Brasil. Plantão 24h.">
+  <meta name="twitter:image" content="https://drapaolatoledo.com.br/og-image.webp">
+  <meta name="twitter:image:alt" content="Toledo Advocacia Especializada - Dra. Paola Toledo">
+
+  <!-- Favicons & Mobile Manifest -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#20251F">
+  <meta name="msapplication-TileColor" content="#20251F">
+
+  <!-- Font Optimization (Preconnect + Non-blocking Google Fonts with swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  </noscript>
+
+  <!-- Preload Hero High Priority Image (LCP Optimization) -->
+  <link rel="preload" as="image" href="assets/dra-paola.webp" fetchpriority="high">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +70,7 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- JavaScript Controller -->
+  <!-- JavaScript Controller (Deferred) -->
   <script src="script.js" defer></script>
 
   <!-- Tailwind Custom Configuration -->
@@ -61,7 +94,7 @@
           },
           fontFamily: {
             serif: ['Cormorant Garamond', 'Georgia', 'serif'],
-            sans: ['Plus Jakarta Sans', 'Gantari', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
           }
         }
       }
@@ -72,16 +105,21 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
+    "@type": ["LegalService", "Attorney"],
     "name": "Toledo Advocacia Especializada - Dra. Paola Toledo",
-    "image": "assets/dra-paola.png",
-    "@id": "https://drapaolatoledo.com.br",
-    "url": "https://drapaolatoledo.com.br",
+    "alternateName": "Toledo Advocacia Especializada",
+    "description": "Advocacia Criminal e Cível de excelência em São Bernardo do Campo/SP e atuação em todo o Brasil. Defesa estratégica, Habeas Corpus, Tribunal do Júri e Direito de Família. Plantão 24 horas.",
+    "image": "https://drapaolatoledo.com.br/assets/dra-paola.webp",
+    "logo": "https://drapaolatoledo.com.br/assets/logo.webp",
+    "@id": "https://drapaolatoledo.com.br/#legalservice",
+    "url": "https://drapaolatoledo.com.br/",
     "telephone": "+5511972722661",
-    "priceRange": "$$$$",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Cash, Credit Card, PIX, Bank Transfer",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Rua José Versolato, 111 - Centro",
+      "streetAddress": "Rua José Versolato, 111 - Sala Domo Business - Centro",
       "addressLocality": "São Bernardo do Campo",
       "addressRegion": "SP",
       "postalCode": "09750-730",
@@ -92,14 +130,39 @@
       "latitude": -23.6931446,
       "longitude": -46.5506747
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "São Paulo"
+      },
+      {
+        "@type": "Country",
+        "name": "Brasil"
+      }
+    ],
+    "knowsAbout": [
+      "Direito Penal",
+      "Direito Processual Penal",
+      "Habeas Corpus",
+      "Tribunal do Júri",
+      "Audiência de Custódia",
+      "Execução Penal",
+      "Lei Maria da Penha",
+      "Direito Cível",
+      "Direito de Família e Sucessões",
+      "Divórcio e Pensão Alimentícia",
+      "Assessoria Empresarial"
+    ],
     "sameAs": [
       "https://www.instagram.com/dra.paolatoledo"
     ]
@@ -189,8 +252,7 @@
     class="relative min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="assets/banner.jpg" alt="Toledo Advocacia Especializada - Dra. Paola Toledo"
-        class="w-full h-full object-cover object-center scale-105 opacity-30">
+      <img src="assets/banner.webp" alt="" aria-hidden="true" width="1600" height="600" fetchpriority="high" loading="eager" decoding="async" class="w-full h-full object-cover object-center scale-105 opacity-30">
       <!-- Dark luxury gradient overlays matching #20251F -->
       <div class="absolute inset-0 bg-gradient-to-t from-[#20251F] via-[#20251F]/90 to-[#20251F]/75"></div>
       <div
@@ -267,8 +329,7 @@
               class="absolute -inset-4 rounded-3xl border-2 border-gold/30 translate-x-4 translate-y-4 -z-10 hidden sm:block">
             </div>
             <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold/50 bg-[#171B16]">
-              <img src="assets/dra-paola.png" alt="Dra. Paola Toledo - Advocacia Especializada"
-                class="w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-700">
+              <img src="assets/dra-paola.webp" alt="Dra. Paola Toledo - Advocacia Especializada Criminal e Cível" width="1200" height="1600" fetchpriority="high" loading="eager" decoding="async" class="w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-700">
               <div
                 class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-[#171B16] via-[#171B16]/80 to-transparent text-center">
                 <p class="font-serif font-bold text-white text-lg">Dra. Paola N. Toledo</p>
@@ -350,8 +411,7 @@
             </div>
 
             <div class="image-frame aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-2 border-gold/40">
-              <img src="assets/foto_quem_sou_eu.jpg" alt="Dra. Paola N. Toledo - Advogada Criminalista e Cível"
-                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
+              <img src="assets/foto_quem_sou_eu.webp" alt="Dra. Paola N. Toledo - Advogada Criminalista e Cível Especialista" width="960" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
             </div>
 
             <!-- Floating Badge -->
@@ -362,7 +422,7 @@
                 <i class="fa-solid fa-gavel"></i>
               </div>
               <div>
-                <h4 class="font-serif font-bold text-white text-base">Dra. Paola N. Toledo</h4>
+                <p class="font-serif font-bold text-white text-base">Dra. Paola N. Toledo</p>
                 <p class="text-xs text-slate-400 font-light">Advocacia Criminal & Cível</p>
               </div>
             </div>
@@ -413,7 +473,7 @@
                 <i class="fa-solid fa-landmark"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Pré-Candidata a Deputada Estadual (SP)</h4>
+                <h3 class="text-sm font-semibold text-white">Pré-Candidata a Deputada Estadual (SP)</h3>
                 <p class="text-xs text-slate-400 font-light">Compromisso com São Paulo & cidadania</p>
               </div>
             </div>
@@ -424,7 +484,7 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Especialista Penal & Processual Penal</h4>
+                <h3 class="text-sm font-semibold text-white">Especialista Penal & Processual Penal</h3>
                 <p class="text-xs text-slate-400 font-light">Tráfico, lavagem & org. criminosa</p>
               </div>
             </div>
@@ -435,7 +495,7 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Presidente Instituto Além da Pena</h4>
+                <h3 class="text-sm font-semibold text-white">Presidente Instituto Além da Pena</h3>
                 <p class="text-xs text-slate-400 font-light">Compromisso com o recomeço</p>
               </div>
             </div>
@@ -446,7 +506,7 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Assessoria a Concessionárias</h4>
+                <h3 class="text-sm font-semibold text-white">Assessoria a Concessionárias</h3>
                 <p class="text-xs text-slate-400 font-light">Atuação corporativa em todo o Brasil</p>
               </div>
             </div>
@@ -457,7 +517,7 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Atendimento Humanizado 24h</h4>
+                <h3 class="text-sm font-semibold text-white">Atendimento Humanizado 24h</h3>
                 <p class="text-xs text-slate-400 font-light">Plantão presencial & online</p>
               </div>
             </div>
@@ -468,7 +528,7 @@
                 <i class="fa-solid fa-check"></i>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-white">Comissão de Prerrogativas OAB</h4>
+                <h3 class="text-sm font-semibold text-white">Comissão de Prerrogativas OAB</h3>
                 <p class="text-xs text-slate-400 font-light">Defesa contínua da advocacia e ética</p>
               </div>
             </div>
@@ -563,7 +623,7 @@
       <div id="no-areas-found"
         class="hidden text-center py-12 px-4 bg-white rounded-2xl border border-slate-200 shadow-sm max-w-md mx-auto my-8">
         <i class="fa-solid fa-folder-open text-4xl text-slate-300 mb-3"></i>
-        <h4 class="font-serif text-lg font-bold text-slate-700">Nenhuma especialidade encontrada</h4>
+        <p class="font-serif text-lg font-bold text-slate-700">Nenhuma especialidade encontrada</p>
         <p class="text-xs text-slate-500 mt-1">Tente buscar por outro termo ou escolha uma das abas de categoria acima.
         </p>
       </div>
@@ -1278,7 +1338,7 @@
 
           <div class="timeline-step active flex flex-col lg:items-center text-left lg:text-center reveal">
             <div class="step-node mb-4">1</div>
-            <h4 class="font-serif text-lg font-bold text-[#20251F] mb-2">1. Primeiro Contato</h4>
+            <h3 class="font-serif text-lg font-bold text-[#20251F] mb-2">1. Primeiro Contato</h3>
             <p class="text-xs text-slate-600 font-normal leading-relaxed">
               Atendimento inicial imediato via WhatsApp ou telefone para compreender sua necessidade urgente.
             </p>
@@ -1286,7 +1346,7 @@
 
           <div class="timeline-step flex flex-col lg:items-center text-left lg:text-center reveal reveal-delay-1">
             <div class="step-node mb-4">2</div>
-            <h4 class="font-serif text-lg font-bold text-[#20251F] mb-2">2. Análise do Caso</h4>
+            <h3 class="font-serif text-lg font-bold text-[#20251F] mb-2">2. Análise do Caso</h3>
             <p class="text-xs text-slate-600 font-normal leading-relaxed">
               Exame detalhado de documentos, inquérito ou processo para identificação da melhor tese defensiva.
             </p>
@@ -1294,7 +1354,7 @@
 
           <div class="timeline-step flex flex-col lg:items-center text-left lg:text-center reveal reveal-delay-2">
             <div class="step-node mb-4">3</div>
-            <h4 class="font-serif text-lg font-bold text-[#20251F] mb-2">3. Estratégia Jurídica</h4>
+            <h3 class="font-serif text-lg font-bold text-[#20251F] mb-2">3. Estratégia Jurídica</h3>
             <p class="text-xs text-slate-600 font-normal leading-relaxed">
               Definição de plano de ação firme, proposição de Habeas Corpus, defesas ou petições pertinentes.
             </p>
@@ -1302,7 +1362,7 @@
 
           <div class="timeline-step flex flex-col lg:items-center text-left lg:text-center reveal reveal-delay-3">
             <div class="step-node mb-4">4</div>
-            <h4 class="font-serif text-lg font-bold text-[#20251F] mb-2">4. Acompanhamento</h4>
+            <h3 class="font-serif text-lg font-bold text-[#20251F] mb-2">4. Acompanhamento</h3>
             <p class="text-xs text-slate-600 font-normal leading-relaxed">
               Atuação presencial ou digital contínua com informação constante e transparente a você e familiares.
             </p>
@@ -1310,7 +1370,7 @@
 
           <div class="timeline-step flex flex-col lg:items-center text-left lg:text-center reveal reveal-delay-4">
             <div class="step-node mb-4">5</div>
-            <h4 class="font-serif text-lg font-bold text-[#20251F] mb-2">5. Resultado</h4>
+            <h3 class="font-serif text-lg font-bold text-[#20251F] mb-2">5. Resultado</h3>
             <p class="text-xs text-slate-600 font-normal leading-relaxed">
               Busca firme pelo restabelecimento da liberdade, justiça e proteção integral dos seus direitos.
             </p>
@@ -1455,8 +1515,8 @@
                 <i class="fa-brands fa-whatsapp text-xl"></i>
               </div>
               <div>
-                <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Telefone / WhatsApp
-                  Plantão</h4>
+                <h3 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Telefone / WhatsApp
+                  Plantão</h3>
                 <a href="https://wa.me/5511972722661" target="_blank" rel="noopener noreferrer"
                   class="text-base font-bold text-emerald-400 hover:underline">+55 11 97272-2661</a>
               </div>
@@ -1469,7 +1529,7 @@
                 <i class="fa-brands fa-instagram text-xl"></i>
               </div>
               <div>
-                <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Instagram Oficial</h4>
+                <h3 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Instagram Oficial</h3>
                 <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener noreferrer"
                   class="text-base font-bold text-white hover:text-gold transition-colors">@dra.paolatoledo</a>
               </div>
@@ -1482,9 +1542,9 @@
                 <i class="fa-solid fa-map-marker-alt text-xl"></i>
               </div>
               <div>
-                <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Endereço Físico</h4>
+                <h3 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Endereço Físico</h3>
                 <a href="https://www.google.com/maps/search/?api=1&query=Rua+José+Versolato,+111,+São+Bernardo+do+Campo,+SP"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-sm font-semibold text-white hover:text-gold transition-colors leading-snug">
                   Rua José Versolato, 111 — Centro<br>São Bernardo do Campo / SP
                 </a>
@@ -1558,11 +1618,11 @@
             Bernardo do Campo/SP e atuação em todo o Brasil.
           </p>
           <div class="flex items-center gap-3">
-            <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener" aria-label="Instagram"
+            <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
               class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-gold hover:border-gold transition-colors">
               <i class="fa-brands fa-instagram text-sm"></i>
             </a>
-            <a href="https://wa.me/5511972722661" target="_blank" rel="noopener" aria-label="WhatsApp"
+            <a href="https://wa.me/5511972722661" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
               class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-400 transition-colors">
               <i class="fa-brands fa-whatsapp text-sm"></i>
             </a>
@@ -1571,7 +1631,7 @@
 
         <!-- Col 2: Quick Links (3 cols) -->
         <div class="lg:col-span-3">
-          <h4 class="font-serif font-bold text-white text-base mb-4 uppercase tracking-wider">Navegação</h4>
+          <h3 class="font-serif font-bold text-white text-base mb-4 uppercase tracking-wider">Navegação</h3>
           <ul class="space-y-2.5 text-xs font-light">
             <li><a href="#inicio" class="hover:text-gold transition-colors">Início</a></li>
             <li><a href="#sobre" class="hover:text-gold transition-colors">Quem Sou Eu</a></li>
@@ -1584,7 +1644,7 @@
 
         <!-- Col 3: OAB Info & Address (4 cols) -->
         <div class="lg:col-span-4">
-          <h4 class="font-serif font-bold text-white text-base mb-4 uppercase tracking-wider">Escritório & OAB</h4>
+          <h3 class="font-serif font-bold text-white text-base mb-4 uppercase tracking-wider">Escritório & OAB</h3>
           <p class="text-xs text-slate-400 font-light mb-2"><strong>Toledo Advocacia Especializada</strong> (Desde 2014)
           </p>
           <p class="text-xs text-slate-400 font-light leading-relaxed mb-4">Rua José Versolato, 111 — Centro, São
