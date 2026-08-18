@@ -161,13 +161,7 @@ body {
   opacity: 0.4;
 }
 
-.gold-line-left {
-  height: 2px;
-  width: 50px;
-  background: var(--gold-gradient);
-  display: inline-block;
-  border-radius: 2px;
-}
+
 
 /* Glassmorphism effects */
 .glass-header {
@@ -455,15 +449,7 @@ body {
   box-shadow: 0 15px 35px rgba(210, 173, 102, 0.1);
 }
 
-.diff-number {
-  font-family: var(--font-heading);
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 /* Timeline Component */
 .timeline-track {
