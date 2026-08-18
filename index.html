@@ -50,14 +50,18 @@
   <!-- Font Optimization (Preconnect + Non-blocking Google Fonts with swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
   </noscript>
 
   <!-- Preload Hero High Priority Image (LCP Optimization) -->
-  <link rel="preload" as="image" href="assets/dra-paola.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-bg.jpg" fetchpriority="high">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -179,12 +183,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
 
       <!-- Brand Logo using original logo image with gold mask -->
-      <a href="#" class="flex items-center gap-3 group" aria-label="Toledo Advocacia Especializada">
-        <span class="logo-gold"></span>
-      </a>
+      <div class="flex items-center lg:flex-1 justify-start">
+        <a href="#" class="flex items-center gap-3 group" aria-label="Toledo Advocacia Especializada">
+          <span class="logo-gold"></span>
+        </a>
+      </div>
 
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-xs xl:text-sm font-medium">
+      <!-- Desktop Navigation Links (Centered) -->
+      <nav
+        class="hidden lg:flex items-center justify-center gap-5 xl:gap-8 text-xs xl:text-sm font-medium whitespace-nowrap">
         <a href="#inicio" class="nav-link py-1">Início</a>
         <a href="#sobre" class="nav-link py-1">Quem Sou Eu</a>
         <a href="#areas" class="nav-link py-1">Áreas de Atuação</a>
@@ -195,7 +202,7 @@
       </nav>
 
       <!-- Desktop CTA Button -->
-      <div class="hidden lg:block">
+      <div class="hidden lg:flex items-center justify-end lg:flex-1">
         <a href="https://wa.me/5511972722661?text=Ol%C3%A1,%20Dra.%20Paola!%20Gostaria%20de%20falar%20com%20uma%20advogada%20e%20iniciar%20meu%20atendimento."
           target="_blank" rel="noopener noreferrer"
           class="group relative inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#F4DA85] border border-[#D2AD66]/50 bg-[#171B16]/60 backdrop-blur-md hover:border-[#F4DA85] hover:text-white hover:bg-[#8C602F]/25 hover:shadow-[0_0_25px_rgba(210,173,102,0.3)] transition-all duration-300 overflow-hidden">
@@ -203,20 +210,20 @@
             class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none"></span>
           <i
             class="fa-brands fa-whatsapp text-sm text-[#F4DA85] group-hover:text-emerald-400 group-hover:scale-110 transition-all duration-300"></i>
-          <span>Plantão 24h WhatsApp</span>
+          <span>Fale Conosco</span>
         </a>
       </div>
 
       <!-- Mobile Hamburger Button -->
       <button id="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false"
-        class="lg:hidden p-2 text-slate-300 hover:text-gold focus:outline-none">
+        class="lg:hidden p-2 text-gold hover:text-gold-light focus:outline-none transition-colors">
         <i class="fa-solid fa-bars-staggered text-2xl"></i>
       </button>
     </div>
 
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu"
-      class="hidden lg:hidden glass-header border-b border-gold/20 px-6 py-6 transition-all duration-300">
+      class="hidden lg:hidden px-6 py-6 transition-all duration-300">
       <nav class="flex flex-col gap-4 text-base font-medium">
         <a href="#inicio" class="mobile-nav-link text-slate-300 hover:text-gold py-2 border-b border-white/5">Início</a>
         <a href="#sobre" class="mobile-nav-link text-slate-300 hover:text-gold py-2 border-b border-white/5">Quem Sou
@@ -238,7 +245,7 @@
               class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none"></span>
             <i
               class="fa-brands fa-whatsapp text-base text-[#F4DA85] group-hover:text-emerald-400 group-hover:scale-110 transition-all duration-300"></i>
-            <span>Plantão 24h WhatsApp</span>
+            <span>Fale Conosco</span>
           </a>
         </div>
       </nav>
@@ -252,11 +259,13 @@
     class="relative min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-16 sm:pb-24 overflow-hidden">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="assets/banner.webp" alt="" aria-hidden="true" width="1600" height="600" fetchpriority="high" loading="eager" decoding="async" class="w-full h-full object-cover object-center scale-105 opacity-30">
+      <img src="assets/hero-bg.jpg" alt="Dra. Paola Toledo - Toledo Advocacia Especializada" width="1920" height="1080" fetchpriority="high"
+        loading="eager" decoding="async" class="w-full h-full object-cover object-[78%_center] sm:object-[72%_center] lg:object-center select-none pointer-events-none">
       <!-- Dark luxury gradient overlays matching #20251F -->
-      <div class="absolute inset-0 bg-gradient-to-t from-[#20251F] via-[#20251F]/90 to-[#20251F]/75"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#20251F] via-[#20251F]/30 to-[#20251F]/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#20251F]/90 via-[#20251F]/60 to-transparent lg:hidden"></div>
       <div
-        class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/15 via-transparent to-transparent">
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none">
       </div>
     </div>
 
@@ -274,60 +283,59 @@
         <div class="lg:col-span-7 text-center lg:text-left">
 
           <!-- Badges -->
-          <div class="mb-4 reveal">
-            <p class="text-xs uppercase tracking-widest text-gold font-semibold">Dra. Paola N. Toledo • OAB/SP 506.634 • Plantão 24h</p>
+          <div class="mb-5 sm:mb-6 pt-1 sm:pt-0 reveal flex justify-center lg:justify-start">
+            <span
+              class="inline-block text-[11px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold font-semibold leading-relaxed px-3.5 py-1.5 sm:px-0 sm:py-0 rounded-full bg-gold/10 sm:bg-transparent border border-gold/25 sm:border-transparent text-center">
+              Advocacia Especializada • Direito Criminal & Cível
+            </span>
           </div>
           <!-- Headline -->
           <h1
-            class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.2] mb-6 reveal reveal-delay-1">
+            class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.2] mb-6 reveal reveal-delay-1 text-center lg:text-left">
             Em momentos difíceis, conte com uma <span class="text-gold-gradient italic font-normal">defesa firme, humana
               e personalizada.</span>
           </h1>
 
           <!-- Subheadline -->
-          <p class="text-base sm:text-xl text-slate-300 font-light leading-relaxed mb-4 reveal reveal-delay-2">
+          <p
+            class="text-base sm:text-xl text-slate-300 font-light leading-relaxed mb-8 reveal reveal-delay-2 text-center lg:text-left">
             Não lido apenas com papéis — lido com <strong>vidas</strong>. Cada caso importa e cada pessoa merece ser
             ouvida com atenção, respeito e técnica jurídica impecável.
           </p>
 
-          <!-- Support Text -->
-          <p class="text-xs sm:text-sm text-gold-light/90 italic mb-8 reveal reveal-delay-2 max-w-2xl">
-            Advocacia Criminal e Cível em São Bernardo do Campo / SP com atendimento presencial e online em todo o
-            Brasil.
-          </p>
-
           <!-- CTAs -->
           <div
-            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 reveal reveal-delay-3">
+            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 mb-5 reveal reveal-delay-3">
             <a href="https://wa.me/5511972722661?text=Ol%C3%A1,%20Dra.%20Paola!%20Gostaria%20de%20falar%20diretamente%20com%20voc%C3%AA%20para%20iniciar%20meu%20atendimento%20jur%C3%ADdico."
               target="_blank" rel="noopener noreferrer"
-              class="btn-gold w-full sm:w-auto px-8 py-4 rounded-lg text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-3 group shadow-2xl">
+              class="btn-gold w-full sm:w-auto px-8 py-4 rounded-full text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-3 group shadow-2xl">
               <i class="fa-brands fa-whatsapp text-xl text-dark-bg group-hover:scale-110 transition-transform"></i>
-              <span>Falar Diretamente com a Dra. Paola no WhatsApp</span>
+              <span>Solicitar Atendimento</span>
             </a>
-            <a href="#sobre"
-              class="btn-outline-gold w-full sm:w-auto px-8 py-4 rounded-lg text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 group">
-              <span>Conheça a Dra. Paola</span>
-              <i class="fa-solid fa-chevron-right text-xs text-gold group-hover:translate-x-1 transition-transform"></i>
-            </a>
+          </div>
+
+          <!-- Support Highlights (OAB & Localização) -->
+          <div
+            class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-5 text-xs text-slate-300/90 reveal reveal-delay-3 pt-1">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-scale-balanced text-gold text-sm"></i>
+              <span><strong>OAB/SP:</strong> 506.634</span>
+            </div>
+            <span class="hidden sm:inline text-gold/40">•</span>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-gold text-sm"></i>
+              <span>São Bernardo do Campo/SP • Atendimento Nacional</span>
+            </div>
           </div>
 
         </div>
 
-        <!-- Right Hero Photo (Dra. Paola's Real Photo from old site) -->
-        <div class="lg:col-span-5 flex justify-center reveal reveal-delay-2">
-          <div class="relative max-w-sm sm:max-w-md w-full">
-            <div
-              class="absolute -inset-4 rounded-3xl border-2 border-gold/30 translate-x-4 translate-y-4 -z-10 hidden sm:block">
-            </div>
-            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold/50 bg-[#171B16]">
-              <img src="assets/dra-paola.webp" alt="Dra. Paola Toledo - Advocacia Especializada Criminal e Cível" width="1200" height="1600" fetchpriority="high" loading="eager" decoding="async" class="w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-700">
-              <div
-                class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-[#171B16] via-[#171B16]/80 to-transparent text-center">
-                <p class="font-serif font-bold text-white text-lg">Dra. Paola N. Toledo</p>
-                <p class="text-xs text-gold font-medium uppercase tracking-wider">Advogada Criminalista & Cível</p>
-              </div>
-            </div>
+        <!-- Right Hero Spacing / Badge for Desktop Hero Background -->
+        <div class="lg:col-span-5 hidden lg:flex flex-col justify-end items-end min-h-[420px] pointer-events-none">
+          <div class="reveal reveal-delay-2 p-4 rounded-2xl bg-[#171B16]/80 backdrop-blur-md border border-gold/30 shadow-2xl pointer-events-auto max-w-xs text-right">
+            <p class="font-serif font-bold text-white text-base">Dra. Paola N. Toledo</p>
+            <p class="text-[11px] text-gold font-semibold uppercase tracking-wider">Advogada Criminalista & Cível</p>
+            <p class="text-[10px] text-slate-400 mt-1">Especialista em Defesa Estratégica</p>
           </div>
         </div>
 
@@ -403,115 +411,94 @@
             </div>
 
             <div class="image-frame aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-2 border-gold/40">
-              <img src="assets/foto_quem_sou_eu.webp" alt="Dra. Paola N. Toledo - Advogada Criminalista e Cível Especialista" width="960" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
+              <img src="assets/foto_quem_sou_eu.webp"
+                alt="Dra. Paola N. Toledo - Advogada Criminalista e Cível Especialista" width="960" height="1280"
+                loading="lazy" decoding="async"
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
             </div>
           </div>
         </div>
 
         <!-- Right Column: Biography & Qualifications -->
-        <div class="lg:col-span-7 reveal reveal-delay-1">
-          <div class="mb-4">
+        <div class="lg:col-span-7 reveal reveal-delay-1 text-center lg:text-left">
+          <div class="mb-3">
             <p class="text-xs uppercase tracking-widest text-gold font-semibold">Quem Sou Eu — Perfil Profissional</p>
           </div>
-          <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-white leading-tight mb-6">
-            Dra. Paola N. Toledo — Advocacia humana, estratégica e <span class="text-gold-gradient">comprometida.</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-5">
+            Dra. Paola Toledo — Advocacia estratégica, técnica e <span
+              class="text-gold-gradient italic">humanizada.</span>
           </h2>
 
-          <p class="text-slate-300 text-base sm:text-lg font-light leading-relaxed mb-4">
+          <p class="text-slate-200 text-base sm:text-lg font-light leading-relaxed mb-6">
             Prazer, sou a <strong>Dra. Paola Toledo</strong>, advogada com mais de 15 anos de experiência e sólida
             atuação na área jurídica. Sou pós-graduada em Direito e Processo Penal, com especialização em
             <strong>tráfico de drogas, lavagem de dinheiro e organização criminosa</strong>.
           </p>
 
-          <p class="text-slate-300 text-sm sm:text-base font-light leading-relaxed mb-4">
-            Sou fundadora do escritório <strong>Toledo Advocacia Especializada</strong> (desde 2014), Membro da
-            Diretoria da Comissão de Prerrogativas da OAB Jabaquara, Presidente do <strong>Instituto Além da Pena -
-              Recomeçar</strong> e <strong>pré-candidata a Deputada Estadual pelo Estado de São Paulo (SP)</strong>,
-            unindo o conhecimento técnico, a coragem e a liderança em defesa da justiça, dos direitos dos cidadãos e do
-            desenvolvimento de São Paulo.
-          </p>
-
-          <p class="text-slate-400 text-sm sm:text-base font-light leading-relaxed mb-8">
-            Atuo também com forte destaque em ações cíveis estratégicas — especialmente nas áreas de <strong>Família,
-              Contratos e Direito do Consumidor</strong> —, além de ser especialista em <strong>assessoria jurídica para
-              concessionárias de veículos em todo o Brasil</strong>. Nosso escritório físico localiza-se em <strong>São
-              Bernardo do Campo/SP</strong>, atendendo presencialmente e online em todo o território nacional.
-          </p>
-
-          <!-- Qualifications Checklist -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-landmark"></i>
+          <!-- Clean Highlight Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
+            <div class="glass-card p-4 rounded-xl border border-white/10 hover:border-gold/40 transition-all">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <div
+                  class="w-7 h-7 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs flex-shrink-0">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3 class="text-sm font-semibold text-white">Trajetória & OAB</h3>
               </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Pré-Candidata a Deputada Estadual (SP)</h3>
-                <p class="text-xs text-slate-400 font-light">Compromisso com São Paulo & cidadania</p>
-              </div>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Fundadora da <strong>Toledo Advocacia Especializada</strong> (desde 2014), Membro da Diretoria da
+                Comissão de Prerrogativas da OAB Jabaquara e ex-membro da Comissão da Jovem Advocacia (2014/2016).
+              </p>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-check"></i>
+            <div class="glass-card p-4 rounded-xl border border-white/10 hover:border-gold/40 transition-all">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <div
+                  class="w-7 h-7 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs flex-shrink-0">
+                  <i class="fa-solid fa-landmark"></i>
+                </div>
+                <h3 class="text-sm font-semibold text-white">Cidadania & Liderança</h3>
               </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Especialista Penal & Processual Penal</h3>
-                <p class="text-xs text-slate-400 font-light">Tráfico, lavagem & org. criminosa</p>
-              </div>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Presidente do <strong>Instituto Além da Pena - Recomeçar</strong> e <strong>pré-candidata a Deputada
+                  Estadual pelo Estado de São Paulo (SP)</strong>, sempre prezando pela ética e excelência.
+              </p>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-check"></i>
+            <div class="glass-card p-4 rounded-xl border border-white/10 hover:border-gold/40 transition-all">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <div
+                  class="w-7 h-7 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs flex-shrink-0">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3 class="text-sm font-semibold text-white">Cível & Concessionárias</h3>
               </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Presidente Instituto Além da Pena</h3>
-                <p class="text-xs text-slate-400 font-light">Compromisso com o recomeço</p>
-              </div>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Atuação em ações cíveis estratégicas (Família, Contratos e Consumidor) e assessoria jurídica para
+                <strong>concessionárias de veículos em todo o Brasil</strong>.
+              </p>
             </div>
 
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-check"></i>
+            <div class="glass-card p-4 rounded-xl border border-white/10 hover:border-gold/40 transition-all">
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <div
+                  class="w-7 h-7 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs flex-shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3 class="text-sm font-semibold text-white">Atendimento Nacional</h3>
               </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Assessoria a Concessionárias</h3>
-                <p class="text-xs text-slate-400 font-light">Atuação corporativa em todo o Brasil</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Atendimento Humanizado 24h</h3>
-                <p class="text-xs text-slate-400 font-light">Plantão presencial & online</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div
-                class="w-6 h-6 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xs mt-1 flex-shrink-0">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <div>
-                <h3 class="text-sm font-semibold text-white">Comissão de Prerrogativas OAB</h3>
-                <p class="text-xs text-slate-400 font-light">Defesa contínua da advocacia e ética</p>
-              </div>
+              <p class="text-xs text-slate-300 font-light leading-relaxed">
+                Escritório físico em <strong>São Bernardo do Campo/SP</strong>, com atuação em todo o território
+                nacional, com estratégia, técnica e empatia a cada cliente.
+              </p>
             </div>
           </div>
 
           <!-- Instagram Badge -->
-          <div class="flex items-center gap-4 pt-4 border-t border-white/10">
-            <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">📲 Siga no Instagram:</span>
+          <div class="flex items-center gap-4 pt-3 border-t border-white/10">
+            <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Acompanhe nas redes:</span>
             <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener noreferrer"
-              class="btn-outline-gold px-4 py-2 rounded-lg text-xs font-semibold inline-flex items-center gap-2">
+              class="btn-outline-gold px-4 py-2 rounded-full text-xs font-semibold inline-flex items-center gap-2 hover:border-gold">
               <i class="fa-brands fa-instagram text-base text-pink-400"></i>
               <span>@dra.paolatoledo</span>
             </a>
@@ -1200,7 +1187,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Section Header -->
-      <div class="max-w-3xl mb-16 reveal">
+      <div class="max-w-3xl mb-16 reveal text-center lg:text-left mx-auto lg:mx-0">
         <div class="mb-3">
           <p class="text-xs uppercase tracking-widest text-gold font-semibold">Diferenciais da Defesa</p>
         </div>
@@ -1215,7 +1202,10 @@
         <!-- Diff 01 -->
         <div class="diff-card reveal reveal-delay-1 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4"><i class="fa-solid fa-handshake-angle"></i></div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
             <h3 class="font-serif text-xl font-bold text-white mb-3">Atendimento Humano e Direto</h3>
             <p class="text-slate-400 text-sm font-light leading-relaxed">
               Você fala diretamente com a Dra. Paola Toledo. Atendimento com respeito, escuta ativa e empatia em
@@ -1230,7 +1220,10 @@
         <!-- Diff 02 -->
         <div class="diff-card reveal reveal-delay-2 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
             <h3 class="font-serif text-xl font-bold text-white mb-3">Estratégia Firme e Agilidade</h3>
             <p class="text-slate-400 text-sm font-light leading-relaxed">
               Defesa incansável e ágil em delegacias, audiências e tribunais. Resposta rápida para casos urgentes de
@@ -1245,7 +1238,10 @@
         <!-- Diff 03 -->
         <div class="diff-card reveal reveal-delay-3 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4"><i class="fa-solid fa-award"></i></div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4">
+              <i class="fa-solid fa-award"></i>
+            </div>
             <h3 class="font-serif text-xl font-bold text-white mb-3">+15 Anos de Experiência</h3>
             <p class="text-slate-400 text-sm font-light leading-relaxed">
               Vasta bagagem acadêmica e prática, atuação na OAB, especializada nas causas penais e cíveis de alta
@@ -1260,7 +1256,10 @@
         <!-- Diff 04 -->
         <div class="diff-card reveal reveal-delay-4 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div
+              class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-base mb-4">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
             <h3 class="font-serif text-xl font-bold text-white mb-3">Plantão 24h & Atuação Nacional</h3>
             <p class="text-slate-400 text-sm font-light leading-relaxed">
               Atendimento presencial em São Bernardo do Campo/SP e online com cobertura para urgências penais em todo o
@@ -1359,7 +1358,7 @@
       <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-gold/10 blur-[110px] rounded-full">
       </div>
-      
+
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1455,7 +1454,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
         <!-- Left Column: Direct Contact Info -->
-        <div class="lg:col-span-5 reveal">
+        <div class="lg:col-span-5 reveal text-center lg:text-left">
           <div class="mb-3">
             <p class="text-xs uppercase tracking-widest text-gold font-semibold">Atendimento Direto</p>
           </div>
@@ -1580,7 +1579,8 @@
             Bernardo do Campo/SP e atuação em todo o Brasil.
           </p>
           <div class="flex items-center gap-3">
-            <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+            <a href="https://www.instagram.com/dra.paolatoledo" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"
               class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-gold hover:border-gold transition-colors">
               <i class="fa-brands fa-instagram text-sm"></i>
             </a>
