@@ -1,0 +1,13 @@
+{
+  "name": "advocacia-landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page - Advocacia",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
