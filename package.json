@@ -1,13 +1,18 @@
 {
   "name": "advocacia-landing-page",
   "version": "1.0.0",
-  "description": "Landing Page - Advocacia",
-  "main": "server.js",
+  "description": "Toledo Advocacia Especializada - Landing Page",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "build": "echo Static site ready",
+    "dev": "node server.js",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "advocacia",
+    "landing-page",
+    "direito-penal",
+    "direito-civel"
+  ],
+  "author": "Dra. Paola N. Toledo",
   "license": "ISC"
 }

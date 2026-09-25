@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ========================================================================== */
 function initHeaderScroll() {
   const header = document.getElementById('main-header');
+  if (!header) return;
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
 
@@ -500,7 +501,7 @@ function initPracticeModals() {
     }
   };
 
-  const practiceElements = document.querySelectorAll('.practice-card-light, .practice-detail-btn');
+  const practiceElements = document.querySelectorAll('.practice-card-light');
 
   practiceElements.forEach(el => {
     el.addEventListener('click', (e) => {
@@ -664,7 +665,10 @@ function initContactForm() {
     const encodedMsg = encodeURIComponent(textMsg);
     const whatsappUrl = `https://wa.me/5511972722661?text=${encodedMsg}`;
 
-    window.open(whatsappUrl, '_blank');
+    const win = window.open(whatsappUrl, '_blank');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = whatsappUrl;
+    }
   });
 }
 
